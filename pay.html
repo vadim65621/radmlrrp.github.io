@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Mirrored from r-rp.ru/pay by HTTrack Website Copier/3.x [XR&CO'2010], Mon, 11 Jun 2018 16:13:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="kxLrg8NhuFa7EheV6CeL78QVTWCgvtn4seJf6qIfdgTrq0DGlo5ol4AYb63XXKT-NBFOh7Hn0nrD8oaiGrUomA==">
+    <title>Пополнение счета - Radmir RolePlay</title>
+    <link href="assets/9e97956c/css/bootstrap.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;amp;subset=cyrillic" rel="stylesheet">
+<link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet"></head>
+<body class="bg-1">
+
+    <div class="mobile-bar">
+        <div class="text-right"><button class="open-bar"></button></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="clearfix">
+        <div class="sidebar">
+    <div class="sidebar__logo">
+        <img src="images/logo-sidebar.png" alt="Radmir CRMP Logo">
+    </div>
+    <hr class="sidebar__divider">
+    <ul class="sidebar__nav">
+					<li style="text-align:center">
+				<img src="images/sidebar__userpic_nonauth.jpg" class="sidebar__nologinpic" alt="">
+				<a href="profile/login.html" class="sidebar__login">Войти</a>
+			</li>
+		
+        <li><a class="sidebar__link sidebar__link_home" href="index.html">Главная</a></li>
+        <li><a class="sidebar__link sidebar__link_news" href="news.html">Новости</a></li>
+        <li><a class="sidebar__link sidebar__link_hts" href="how-to-start.html">Как начать игру</a></li>
+        <li><a class="sidebar__link sidebar__link_forum" href="http://forum.radmir-rp.ru/">Форум</a></li>
+        <li><a class="sidebar__link sidebar__link_shop" href="pay.html">Магазин</a></li>
+        <li><a class="sidebar__link sidebar__link_vk" href="https://vk.com/radmircrmp">Вконтакте</a></li>
+        <li class="sidebar__active-line"></li>
+    </ul>
+</div>
+<script>
+	var loc = document.location.pathname;
+	var ul = document.getElementsByClassName('sidebar__nav')[0];
+	var links = ul.getElementsByTagName('a');
+	var set = false;
+	if(loc == 'index.html') {
+		links[1].className = links[1].className + ' sidebar__link_active';
+	}
+	else {
+		var re = new RegExp('('+loc+')');
+		for(var i in links) {
+			if(re.exec(links[i].href) != null) {
+				links[i].className = links[i].className + ' sidebar__link_active';
+				set = true;
+				break;
+			}
+		}
+		if(!set) links[0].className = links[0].className + ' sidebar__link_active';
+	}
+</script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42590939 = new Ya.Metrika({ id:42590939, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "../mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42590939" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+
+
+
+        <div class="content-container"><div class="row" style="margin-top:40px;margin-bottom:15px">
+    <div class="col-xs-12 col-sm-6 page-title">Магазин</div>
+    <div class="hidden-xs col-sm-6 page-subtitle">Покупка привелегий</div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel">
+            <div class="panel-heading">Пополнение счета</div>
+            <div class="panel-body" style="padding-top:0">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1" style="padding:0">
+                        <style>.form-group{margin-top:0;margin-bottom:15px}</style>
+                        <form id="pay-form" action="http://r-rp.ru/pay" method="post">
+<input type="hidden" name="_csrf" value="kxLrg8NhuFa7EheV6CeL78QVTWCgvtn4seJf6qIfdgTrq0DGlo5ol4AYb63XXKT-NBFOh7Hn0nrD8oaiGrUomA==">                            <div class=" field-pays-server">
+<div class='form-group'><div class='form-addon form-addon_location'></div><select id="pays-server" class="form-input" name="Pays[server]">
+<option value="0">Выберите сервер</option>
+<option value="1">Сервер I</option>
+<option value="2">Сервер II</option>
+<option value="3">Сервер III</option>
+<option value="4">Сервер IV</option>
+</select></div><div class="form-error"></div>
+</div>
+                            <div class=" field-pays-nickname required">
+<div class='form-group'><div class='form-addon form-addon_user'></div><input type="text" id="pays-nickname" class="form-input" name="Pays[nickname]" placeholder="Введите никнейм" aria-required="true"></div><div class="form-error"></div>
+</div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class=" field-pays-sum required">
+<div class='form-group'><div class='form-addon form-addon_sum'></div><input type="text" id="pays-sum" class="form-input" name="Pays[sum]" placeholder="Сумма" aria-required="true"></div><div class="form-error"></div>
+</div>                                    
+                                </div>
+                                <div class="col-xs-6" style="padding:5px">
+                                    <p style="font-size:13px;color:#c5c6c6;margin:0">Можете обменять:</p>
+                                    <p style="font-size:13px;margin:0"><span id="convert-sum">0</span> руб</p>
+                                </div>
+                            </div>
+
+
+
+                            <div style="width:304px;margin-left:-22px;margin-top:10px"></div>                                                        
+
+                            <div class="text-center" style="margin-top:20px"><button type="submit" class="submit-button">Оплатить</button></div>               
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div id="w0" class="carousel">
+<ol class="carousel-indicators"><li class="active" data-target="#w0" data-slide-to="0"></li></ol>
+<div class="carousel-inner"><div class="item active"><img src="images/shop-carousel-3.jpg" alt="">
+</div></div>
+<a class="left carousel-control" href="#w0" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+<a class="right carousel-control" href="#w0" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+</div>
+    </div>
+</div>
+<div class="row">
+    <div class="row">
+        <style>
+            .shop-item-container {
+                position:relative;
+                width:180px;
+                height:275px;
+                margin-bottom:20px;
+            }
+            .shop-item-container .images {
+                width:180px;
+                height:180px;
+                background:url(images/shop-item-bg.png);
+                border-radius:7px;
+                overflow:hidden;
+            }
+            .shop-item-container:hover .images {
+                background-image:url(images/shop-item-bg-active.png);
+            }
+            .shop-item-container .economy {
+                background:#ff5628;
+                color:white;
+                padding:4px 10px;
+                position:absolute;
+                right:0px;
+                top:15px;
+                font-size:10px;
+                display:none;
+            }
+            .shop-item-container:hover .economy {
+                display:block;
+            }
+            .my-col {
+                width:20%;
+            }
+            .packet-name {
+                color:#262626;
+                font-size:15px;
+                margin-top:5px;
+            }
+            .packet-price {
+                font-size:16px;
+                color:#adadad;
+            }
+            .packet-buy {
+                width:60px;
+                text-align:center;
+                color:white;
+                line-height:25px;
+                background:linear-gradient(45deg,#dd6c15,#f1bf31);
+                display:inline-block;
+                border-radius:4px;
+                display:none;
+            }
+            .packet-buy:hover {
+                color:white;
+            }
+            .shop-item-container:hover .packet-buy {
+                display:inline-block;
+            }
+            .shop-item-container:hover .packet-price {
+                color:#e79623;
+            }            
+        </style>
+                    <div class="col-sm-3 my-col shop-item">
+                <div class="shop-item-container">
+                    <div class="images">
+                        <img  src="images/shop-items/1.png" alt="">
+                    </div>
+                    <div class="economy">Экономия 10 руб</div>
+                    <div class="packet-name">Набор «Старт для начала» 100.000 рублей</div>
+                    <div class="packet-price">90 руб</div>
+                    <a href="profile/login.html?id=1" class="packet-buy">Купить</a>
+                </div>   
+            </div>
+                    <div class="col-sm-3 my-col shop-item">
+                <div class="shop-item-container">
+                    <div class="images">
+                        <img  src="images/shop-items/2.png" alt="">
+                    </div>
+                    <div class="economy">Экономия 50 руб</div>
+                    <div class="packet-name">Пакет «Солидненько» 250.000 рублей</div>
+                    <div class="packet-price">200 руб</div>
+                    <a href="profile/login.html?id=2" class="packet-buy">Купить</a>
+                </div>   
+            </div>
+                    <div class="col-sm-3 my-col shop-item">
+                <div class="shop-item-container">
+                    <div class="images">
+                        <img  src="images/shop-items/3.png" alt="">
+                    </div>
+                    <div class="economy">Экономия 150 руб</div>
+                    <div class="packet-name">Набор «Самое то» 550.000</div>
+                    <div class="packet-price">400 руб</div>
+                    <a href="profile/login.html?id=3" class="packet-buy">Купить</a>
+                </div>   
+            </div>
+                    <div class="col-sm-3 my-col shop-item">
+                <div class="shop-item-container">
+                    <div class="images">
+                        <img  src="images/shop-items/4.png" alt="">
+                    </div>
+                    <div class="economy">Экономия 590 руб</div>
+                    <div class="packet-name">Набор «Воровское» 1.390.000</div>
+                    <div class="packet-price">800 руб</div>
+                    <a href="paydcfdhtml.html?id=4" class="packet-buy">Купить</a>
+                </div>   
+            </div>
+                    <div class="col-sm-3 my-col shop-item">
+                <div class="shop-item-container">
+                    <div class="images">
+                        <img  src="images/shop-items/5.png" alt="">
+                    </div>
+                    <div class="economy">Экономия 3500 руб</div>
+                    <div class="packet-name">Набор «Золотые запасы» 7.500.000</div>
+                    <div class="packet-price">4000 руб</div>
+                    <a href="profile/login.html?id=5" class="packet-buy">Купить</a>
+                </div>   
+            </div>
+            </div>
+</div>
+<div class="row" style="margin:50px 0">
+    <div class="col-md-5">
+        <style>
+            .pay-rules {padding-left:15px}
+            .pay-rules li {padding:4px 0;color:#a9a9a9}
+            .profile__table_key {color:#262626}
+            .pay-list-title {color:#262626;font-size:18px;text-transform:uppercase;font-weight:900}
+        </style>        
+        <p class="pay-list-title">Что Вы можете приобрести?</p>
+        <table class="profile__table">
+            <tr>
+                <td class="profile__table_key">Смена игрового никнейма</td>
+                <td class="profile__table_val">50 руб</td>
+            </tr>
+            <tr>
+                <td class="profile__table_key">Снять все предупреждения</td>
+                <td class="profile__table_val">65 руб</td>
+            </tr>
+            <tr>
+                <td class="profile__table_key">Подделка документов</td>
+                <td class="profile__table_val">4 руб</td>
+            </tr>
+            <tr>
+                <td class="profile__table_key">Покупка всех лицензий</td>
+                <td class="profile__table_val">99 руб</td>
+            </tr>
+            <tr>
+                <td class="profile__table_key">Покупка номера авто</td>
+                <td class="profile__table_val">от 83 руб</td>
+            </tr>
+            <tr>
+                <td class="profile__table_key">Покупка военного билета</td>
+                <td class="profile__table_val">139 руб</td>
+            </tr>
+			<tr>
+                <td class="profile__table_key">Покупка оружейных навыков</td>
+                <td class="profile__table_val">50 - 300 руб</td>
+            </tr>
+			<tr>
+                <td class="profile__table_key">VIP SILVER \ GOLD</td>
+                <td class="profile__table_val">200 \ 400 руб</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-6 col-md-offset-1">
+        <p class="pay-list-title">Как провести оплату?</p>
+        <ol class="pay-rules">
+            <li>Заполните поля формы</li>
+            <li>На сайте UnitPay выберите способ пополнения</li>
+            <li>Следуйте дальнейшим инструкциям платежной системы</li>
+            <li>После нажмите кнопку Завершить</li>
+            <li>В игре откройте в меню раздел Донат и выберите нужную услугу</li>
+            <li>Используйте /package чтобы зачислить набор в игре*</li>
+        </ol>
+    </div>
+</div>
+</div>
+    </div>
+
+<!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+ -->
+
+
+<script src="assets/75226729/jquery.js"></script>
+<script src="assets/c45c4d33/yii.js"></script>
+<script src="assets/c45c4d33/yii.validation.js"></script>
+<script src="assets/c45c4d33/yii.activeForm.js"></script>
+<script src="assets/9e97956c/js/bootstrap.js"></script>
+<script src="js/min/script.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+
+        var convertSum = jQuery('#convert-sum'),input = jQuery('#pays-sum');
+        input.on('keyup',function() {
+            var val = input.val();
+            convertSum.text(val*1000);
+        });
+    
+jQuery('#pay-form').yiiActiveForm([{"id":"pays-server","name":"server","container":".field-pays-server","input":"#pays-server","error":".form-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/,"message":"Значение должно быть числом","min":1,"tooSmall":"Выберите сервер","max":4,"tooBig":"Значение «сервер» не должно превышать 4.","skipOnEmpty":1});}},{"id":"pays-nickname","name":"nickname","container":".field-pays-nickname","input":"#pays-nickname","error":".form-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Введите никнейм"});}},{"id":"pays-sum","name":"sum","container":".field-pays-sum","input":"#pays-sum","error":".form-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Введите сумму"});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Значение должно быть целым числом","min":10,"tooSmall":"Минимальное значение 10","skipOnEmpty":1});}}], []);
+jQuery('#w0').carousel();
+});</script></body>
+
+<!-- Mirrored from r-rp.ru/pay by HTTrack Website Copier/3.x [XR&CO'2010], Mon, 11 Jun 2018 16:14:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+</html>

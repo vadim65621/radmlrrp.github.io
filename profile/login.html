@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Mirrored from r-rp.ru/profile/login by HTTrack Website Copier/3.x [XR&CO'2010], Mon, 11 Jun 2018 16:13:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="x3dHNTkvUHW3feySWwQa7JdCphcb-DAtjBvL5yuqgo2_zuxwbMCAtIx3lKpkfzX9Z0al8AqhO6_-CxKvkwDcEQ==">
+    <title>Личный кабинет - Вход - Radmir RolePlay</title>
+    <link href="../assets/9e97956c/css/bootstrap.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;amp;subset=cyrillic" rel="stylesheet">
+<link href="../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/style.min.css" rel="stylesheet"></head>
+<body class="bg-1">
+
+    <div class="mobile-bar">
+        <div class="text-right"><button class="open-bar"></button></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="clearfix">
+        <div class="sidebar">
+    <div class="sidebar__logo">
+        <img src="../images/logo-sidebar.png" alt="Radmir CRMP Logo">
+    </div>
+    <hr class="sidebar__divider">
+    <ul class="sidebar__nav">
+					<li style="text-align:center">
+				<img src="../images/sidebar__userpic_nonauth.jpg" class="sidebar__nologinpic" alt="">
+				<a href="login.html" class="sidebar__login">Войти</a>
+			</li>
+		
+        <li><a class="sidebar__link sidebar__link_home" href="../index.html">Главная</a></li>
+        <li><a class="sidebar__link sidebar__link_news" href="../news.html">Новости</a></li>
+        <li><a class="sidebar__link sidebar__link_hts" href="../how-to-start.html">Как начать игру</a></li>
+        <li><a class="sidebar__link sidebar__link_forum" href="http://forum.radmir-rp.ru/">Форум</a></li>
+        <li><a class="sidebar__link sidebar__link_shop" href="../pay.html">Магазин</a></li>
+        <li><a class="sidebar__link sidebar__link_vk" href="https://vk.com/radmircrmp">Вконтакте</a></li>
+        <li class="sidebar__active-line"></li>
+    </ul>
+</div>
+<script>
+	var loc = document.location.pathname;
+	var ul = document.getElementsByClassName('sidebar__nav')[0];
+	var links = ul.getElementsByTagName('a');
+	var set = false;
+	if(loc == '../index.html') {
+		links[1].className = links[1].className + ' sidebar__link_active';
+	}
+	else {
+		var re = new RegExp('('+loc+')');
+		for(var i in links) {
+			if(re.exec(links[i].href) != null) {
+				links[i].className = links[i].className + ' sidebar__link_active';
+				set = true;
+				break;
+			}
+		}
+		if(!set) links[0].className = links[0].className + ' sidebar__link_active';
+	}
+</script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42590939 = new Ya.Metrika({ id:42590939, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "../../mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42590939" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+
+
+
+        <div class="content-container"><div class="row" style="margin-top:20px;margin-bottom:20px">
+    <div class="col-xs-12 col-sm-6 page-title">Личный кабинет</div>
+    <div class="hidden-xs col-sm-6 page-subtitle">Авторизация</div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <div class="panel">
+            <div class="panel-heading">Авторизация</div>
+            <div class="panel-body" style="padding-top:0">
+                <div class="form__info">
+                    <div class="auth-welcome">Добро пожаловать!</div>
+                </div>
+                              
+                    <form id="login-form" action="http://r-rp.ru/profile/login" method="post">
+<input type="hidden" name="_csrf" value="x3dHNTkvUHW3feySWwQa7JdCphcb-DAtjBvL5yuqgo2_zuxwbMCAtIx3lKpkfzX9Z0al8AqhO6_-CxKvkwDcEQ==">                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2" style="padding:0">
+                                <div class=" field-loginform-server">
+<div class='form-group'><div class='form-addon form-addon_location'></div><select id="loginform-server" class="form-input" name="LoginForm[server]">
+<option value="0">Выберите сервер</option>
+<option value="1">Сервер I</option>
+<option value="2">Сервер II</option>
+<option value="3">Сервер III</option>
+<option value="4">Сервер IV</option>
+</select></div><div class="form-error"></div>
+</div>
+                                <div class=" field-loginform-username required">
+<div class='form-group'><div class='form-addon form-addon_user'></div><input type="text" id="loginform-username" class="form-input" name="LoginForm[username]" placeholder="Введите никнейм" aria-required="true"></div><div class="form-error"></div>
+</div>
+                                <div class=" field-loginform-password required">
+<div class='form-group'><div class='form-addon form-addon_password'></div><input type="password" id="loginform-password" class="form-input" name="LoginForm[password]" placeholder="Введите пароль" aria-required="true"></div><div class="form-error"></div>
+</div>
+                                <div style="width:304px;margin-left:-47px;margin-top:25px">
+                                                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center" style="margin-top:20px;font-weight:bold;margin-bottom:10px">Войти</div>
+                        <div class="text-center">
+                            <button type="submit" class="submit-button">По паролю</button>
+                            <style>.submit-button:hover{color:white;}</style>
+                            <a class="submit-button" href="https://oauth.vk.com/authorize?client_id=5837878&amp;scope=offline&amp;redirect_uri=http%3A%2F%2Fr-rp.ru%2Fvk%2Fauth&amp;v=5.29" style="margin-left:5px;background:#507299"><span class="fa fa-vk" style="margin-right:7px;font-size:20px;vertical-align:text-bottom"></span>Через ВК</a>
+                        </div>
+                        <div class="text-center" style="margin-top:10px"><a class="lose-password-link" href="../recovery/passwordhtml.html">Забыл пароль?</a></div>                   
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+
+<!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+ -->
+
+
+<script src="../assets/75226729/jquery.js"></script>
+<script src="../assets/c45c4d33/yii.js"></script>
+<script src="../assets/c45c4d33/yii.validation.js"></script>
+<script src="../assets/c45c4d33/yii.activeForm.js"></script>
+<script src="../js/min/script.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#login-form').yiiActiveForm([{"id":"loginform-server","name":"server","container":".field-loginform-server","input":"#loginform-server","error":".form-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/,"message":"Значение «Сервер» должно быть числом.","min":1,"tooSmall":"Выберите сервер","max":4,"tooBig":"Не корректный сервер","skipOnEmpty":1});}},{"id":"loginform-username","name":"username","container":".field-loginform-username","input":"#loginform-username","error":".form-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Введите Никнейм"});}},{"id":"loginform-password","name":"password","container":".field-loginform-password","input":"#loginform-password","error":".form-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Введите Пароль"});}}], []);
+});</script></body>
+
+<!-- Mirrored from r-rp.ru/profile/login by HTTrack Website Copier/3.x [XR&CO'2010], Mon, 11 Jun 2018 16:13:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+</html>
